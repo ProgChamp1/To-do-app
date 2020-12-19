@@ -1,0 +1,158 @@
+html {
+    height:100%;
+
+}
+:root {
+    --gradient: linear-gradient(
+        -45deg,
+         #EE7752,
+         #E73C7E,
+         #23A6D5,
+         #23D5AB
+    );
+}
+
+
+body {
+    margin:0;
+    min-height:100vh;
+    padding:0;
+    display:flex;
+    align-items:center;
+    font-family:'Lato', Arial, Sans-serif;
+    background-image: var(--gradient);
+    justify-content: center;
+    background-size: 400% 400%;
+    animation: bg-anim 25s ease-in-out infinite;
+}
+
+
+@keyframes bg-anim {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+  }
+  
+
+.box {
+    margin:auto;
+    background-image: var(--gradient);
+    text-align:center;
+    padding: 40px;
+    width: 50%;
+    min-height: 50%; 
+    height: auto;
+    border: 3px solid black ;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    background-size: 400% 400%;
+    animation: bg-anim 25s ease-in-out infinite;
+    word-break: break-word;
+}
+
+.contents {
+    
+    text-align: center;
+    
+}
+
+.heading {
+    color:white;
+}
+
+.heading1 {
+    
+    color:white;  
+    text-align: left;
+}
+
+input {
+    text-align:center;
+    size: 40px;
+    width:500px;
+    height:30px;
+    font-size: 150%;
+    align-self: center;
+    box-shadow: 3px 3px 5px black;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 20
+}
+
+button {
+    display:inline-flex;
+    padding:8px;
+    text-align:center;
+    font-size:90%;
+    box-shadow: 3px 3px 5px black;
+    background-color: transparent;
+    color:black;
+    width:auto;
+    border-radius: 3px;
+}
+
+.todoList {
+    text-align:left;
+    min-width:30%;
+    list-style:none;
+}
+
+.todoContainer {
+    display:flex;
+    align-items:left;
+    justify-content:left;
+}
+
+.todoDiv {
+    background-image: var(--gradient);
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 3px;
+    font-size: 1.25rem ;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.todoItem {
+    padding: 0rem 0.5rem;
+    flex:1;
+}
+
+.checkButton,.deleteButton {
+    border: 2px solid black;
+    box-shadow: 1px 1px 1px black;
+    color: black;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size:1rem;
+}
+
+.checkButton {
+    background-image: linear-gradient(-45deg, #065c1c,#10e345);
+}
+.deleteButton {
+    background-image: linear-gradient(-45deg, #ab0909,#ff0303 );
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem), rotateZ(-20deg);
+    opacity: 0;
+}
