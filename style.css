@@ -3,14 +3,9 @@ html {
 
 }
 :root {
-    --gradient: linear-gradient(
-        -45deg,
-         #EE7752,
-         #E73C7E,
-         #23A6D5,
-         #23D5AB
-    );
-}
+    --gradient: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+    
+    }
 
 
 body {
@@ -20,7 +15,7 @@ body {
     display:flex;
     align-items:center;
     font-family:'Lato', Arial, Sans-serif;
-    background-image: var(--gradient);
+    background-image:var(--gradient);
     justify-content: center;
     background-size: 400% 400%;
     animation: bg-anim 25s ease-in-out infinite;
@@ -42,7 +37,7 @@ body {
 
 .box {
     margin:auto;
-    background-image: var(--gradient);
+    background-color: #2c334e;
     text-align:center;
     padding: 40px;
     width: 50%;
@@ -51,20 +46,22 @@ body {
     border: 3px solid black ;
     border-radius: 10px;
     box-shadow: 3px 3px 10px black;
-    background-size: 400% 400%;
-    animation: bg-anim 25s ease-in-out infinite;
     word-break: break-word;
 }
 
 .contents {
     
     text-align: center;
-    
+    justify-content: center;
 }
 
 .heading {
     color:white;
-}
+    border: 3px solid white;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 10px;
+    width: auto;
+}   
 
 .heading1 {
     
@@ -111,9 +108,9 @@ button {
 }
 
 .todoDiv {
-    background-image: var(--gradient);
+    background-color: #2c334e;
     border: 2px solid black;
-    box-shadow: 3px 3px 3px black;
+    box-shadow: 3px 3px 5px black;
     border-radius: 3px;
     font-size: 1.25rem ;
     display:flex;
@@ -125,6 +122,7 @@ button {
 .todoItem {
     padding: 0rem 0.5rem;
     flex:1;
+    color: white;
 }
 
 .checkButton,.deleteButton {
@@ -153,6 +151,6 @@ button {
 }
 
 .fall {
-    transform: translateY(8rem), rotateZ(-20deg);
+    transform: translateY(8rem), rotateZ(20deg);
     opacity: 0;
 }
