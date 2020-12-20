@@ -3,9 +3,7 @@ html {
 
 }
 :root {
-    --gradient: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
-    
-    }
+    --gradient: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);}
 
 
 body {
