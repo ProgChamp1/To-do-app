@@ -21,7 +21,10 @@ todoInput.onkeyup = () => {
 function addtodo(event) {
   event.preventDefault();
   const val = todoInput.value;
-  if (!val.trim().length) return;
+  if (!val.trim().length) return; 
+
+
+  
 
   // create todo div
   const todoDiv = document.createElement("div");
