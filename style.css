@@ -9,6 +9,7 @@ html {
             rgba(255, 255, 255, 0.3));
 }
 
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -19,6 +20,8 @@ body {
     background-image: var(--gradient);
     justify-content: center;
 }
+
+
 
 .glow {
     font-size: 45px;
