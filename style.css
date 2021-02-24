@@ -1,160 +1,157 @@
 html {
-    height: 100%;
+  height: 100%;
 }
-
 :root {
-    --gradient: linear-gradient(to right top, #65dfc9, #6cdbeb);
-    --gradient2: linear-gradient(to right bottom,
-            rgba(255, 255, 255, 0.7),
-            rgba(255, 255, 255, 0.3));
+  --gradient: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  --gradient2: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
 }
-
-
 body {
-    margin: 0;
-    min-height: 100vh;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    font-family: "Lato", Arial, Sans-serif;
-    background-image: var(--gradient);
-    justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-family: Lato, Arial, Sans-serif;
+  background-image: var(--gradient);
+  justify-content: center;
 }
-
-
-
 .glow {
-    font-size: 45px;
-    color: #426696;
-    text-align: center;
+  font-size: 45px;
+  color: #426696;
+  text-align: center;
 }
-
 .box {
-    min-height: 80vh;
-    min-width: 60%;
-    background: var(--gradient2);
-    border-radius: 2rem;
-    z-index: 2;
-    backdrop-filter: blur(2rem);
-    text-align: center;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
+  min-height: 80vh;
+  min-width: 60%;
+  background: var(--gradient2);
+  border-radius: 0.5rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
-
 .circle1,
 .circle2 {
-    background: white;
-    background: var(--gradient2);
-    height: 20rem;
-    width: 20rem;
-    position: absolute;
-    border-radius: 50%;
+  background: #fff;
+  background: var(--gradient2);
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
 }
-
 .circle1 {
-    top: 5%;
-    right: 15%;
+  top: 5%;
+  right: 15%;
 }
-
 .circle2 {
-    bottom: 5%;
-    left: 10%;
+  bottom: 5%;
+  left: 10%;
 }
-
 .todoContainer {
-    text-align: center;
-    justify-content: center;
+  text-align: center;
+  justify-content: center;
 }
-
 .heading1 {
-    color: #426696;
-    text-align: left;
+  color: #426696;
+  text-align: left;
 }
-
-input {
-    text-align: center;
-    size: 40px;
-    width: 500px;
-    height: 30px;
-    font-size: 150%;
-    align-self: center;
-    box-shadow: 3px 3px 5px black;
-    justify-content: center;
-    padding: 1.2rem;
-    outline: none;
-    border-radius: 9px;
+.main_input {
+  text-align: center;
+  max-width: 500px;
+  height: 30px;
+  font-size: 1.5rem;
+  align-self: center;
+  box-shadow: 3px 3px 5px #1d1d1d;
+  justify-content: center;
+  padding: 1.2rem;
+  outline: 0;
+  border-radius: 5px;
+  outline: 0;
+  border: none;
+  margin-bottom: 10px;
 }
-
 input::-webkit-input-placeholder {
-    font-size: 20;
+  font-size: 20;
 }
-
 button {
-    display: inline-flex;
-    text-align: center;
-    font-size: 90%;
-    box-shadow: 3px 3px 5px black;
-    background-color: transparent;
-    color: black;
-    width: auto;
-    margin-left: 10px;
-    width: 4rem;
-    padding: .8rem;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
+  display: inline-flex;
+  text-align: center;
+  background-color: transparent;
+  color: #000;
+  width: auto;
+  margin-left: 10px;
+  width: 4rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
 }
-
 .todoList {
-    text-align: left;
-    min-width: 30%;
-    list-style: none;
+  text-align: left;
+  min-width: 30%;
+  list-style: none;
 }
-
 .todoContainer {
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .todoDiv {
-    background: var(--gradient2);
-    border-radius: 3px;
-    font-size: 1.25rem;
-    display: flex;
-    align-items: center;
-    transition: 0.5s ease;
+  background: var(--gradient2);
+  border-radius: 3px;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  transition: 0.5s ease;
+  margin-top: 5px;
+  padding: 0.5rem;
 }
-
 .todoItem {
-    padding: 0rem 0.5rem;
-    flex: 1;
+  padding: 0 0.5rem;
+  flex: 1;
 }
-
 .checkButton,
 .deleteButton {
-    border: 2px solid black;
-    box-shadow: 1px 1px 1px black;
-    color: black;
-    padding: 0.5rem;
-    cursor: pointer;
-    font-size: 1rem;
+  box-shadow: none;
+  padding: 0.5rem;
+  width: auto;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px;
 }
-
+button {
+  cursor: pointer;
+}
 .checkButton {
-    background-image: linear-gradient(-45deg, #065c1c, #10e345);
+  color: green;
+  border: 2px solid green;
 }
-
 .deleteButton {
-    background-image: linear-gradient(-45deg, #ab0909, #ff0303);
+  color: #ff0303;
+  border: 2px solid #ff0303;
 }
-
-.fa-trash,
-.fa-check {
-    pointer-events: none;
+.fa-check,
+.fa-trash {
+  pointer-events: none;
 }
-
 .completed {
-    text-decoration: line-through;
-    opacity: 0.5;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.auto-updating-input {
+  font-size: 1.2rem;
+  border: none;
+  padding: 0.5rem;
+  outline: none;
+  background: transparent;
+  border: 1px solid #e3e3e3;
+  transition: 0.3s linear;
 }
